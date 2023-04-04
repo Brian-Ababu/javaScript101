@@ -1,0 +1,262 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <h1>Java Script Class</h1>
+    
+</body>
+<script>
+    //let age = 1000;
+    // if (age >= 18 && age <= 100) {
+    //    console.log("you are of legal age to vote")
+    // }else if(age >= 0 && age<=17){
+    //    console.log("you are not of legal age  hence cannot vote")
+    // }else{
+    //    console.log("please enter a valid age")
+    // }
+    // let firstName = prompt("enter your firstname");
+    // let lastName = prompt("enter your lastname");
+
+    // let fullName = firstName + " " +lastName;
+    // alert("your full name is: " +fullName);
+
+    //Assignment Thursday March 16, 2023
+     /* let score = prompt("enter your marks");
+        if (score >= 70 && score <= 100) {
+            alert("A")
+        }else if(score >= 60 && score <= 69){
+            alert("B")
+        }else if(score >=50 && score <= 59){
+            alert("C")
+        }else if(score >= 40 && score <= 49){
+            alert("D")
+        }else if(score <=39){
+            alert("E")
+        }else{
+            alert("Enter valid marks")
+        } */
+
+    /*let unit1Score = prompt("enter yout fundamentals of computing marks");
+    let num1 = Number(unit1Score);
+    let unit2Score = prompt("enter your webdesign marks");
+    let num2 = Number(unit2Score);
+    let unit3Score = prompt("enter your git marks");
+    let num3 = Number(unit3Score);
+    
+    let average = (num1+num2+num3)/3;
+    if (average >= 70 && average <= 100) {
+            alert("A")
+        }else if(average >= 60 && average <= 69){
+            alert("B")
+        }else if(average >=50 && average <= 59){
+            alert("C")
+        }else if(average >= 40 && average <= 49){
+            alert("D")
+        }else if(average <=39){
+            alert("E")
+        }else{
+            alert("Enter valid marks")
+        }*/
+    
+    //Notes Tuesday March 21, 2023
+    /*let age = 41;
+    switch (age) {
+        case 18:
+            console.log("you are 18 years old")
+            break;
+        case 19:
+            console.log("you are 19 years old")
+            break;
+        case 20:
+            console.log("you are 20 years old")
+            break;
+        case 21:
+            console.log("you are 21 years old")
+            break;          
+        default:
+            console.log("you are not within the age bracket to enroll")
+            break;
+    }*/
+
+    /*let myString = "I am learning how to write code in JavaScript"
+    console.log(myString)
+
+    console.log(myString.toLowerCase())
+    console.log(myString.toUpperCase())
+    console.log(myString.length)
+    console.log(myString.endsWith("t"))
+    console.log(myString.indexOf("am"))*/
+
+    //Assignments Tuesday March 21, 2023
+
+    //Asgn1
+    /*let userEmail1 = prompt("Please enter your email address");
+    let userEmail2 = prompt("Please confirm your email address");
+    if (userEmail1 === userEmail2) {
+        alert("Your email address has been saved")
+    }else{
+        alert("The email addresses entered do not match please try again")
+    }*/
+
+    //Asgn2
+    /*let userName = prompt ("Enter your user name");
+    let userPwd = prompt("Enter your password");
+    console.log(userPwd.length);
+    if (userPwd.length >= 10) {
+        alert("User information saved successfully")
+    } else {
+        alert("Password entered too short")
+    }*/
+
+    //Asgn3
+    /*let userTotal = prompt("enter your total shopping amount");
+    let numTotal = parseFloat(userTotal);
+    
+    if (numTotal >= 10000) {
+       var discount = numTotal*0.15;
+       var payableAmount = numTotal - discount;
+       alert("Discount" +' ' + discount +  '  ' + "User payable Amount" +' '+ payableAmount)  
+    } else if (numTotal >= 5000 && numTotal <= 9999) {
+       var discount = numTotal*0.1;
+       var payableAmount = numTotal - discount;
+       alert("Discount" +' ' + discount +  '  ' + "User Payable Amount" +' '+ payableAmount)   
+    } else if (numTotal >= 3000 && numTotal <= 4999) {
+       var discount = numTotal*0.05;
+       var payableAmount = numTotal - discount;
+       alert("Discount" +' ' + discount +  '  ' + "User Payable Amount" +' '+ payableAmount)
+    } else if(numTotal <= 2999){
+       var discount = numTotal*0;
+       var payableAmount = numTotal - discount;
+       alert("Discount" +' ' + discount +  '  ' + "User Payable Amount" +' '+ payableAmount)
+    } else{
+        alert("Enter a valid amount")
+    }*/ 
+
+    //For Loops Assignments 3/22/2023
+    /*for (let i = 1; i <= 20; i++){
+        if (i%2 == 0) {
+            console.log(i +' '+ "even")
+        }else if (i%2 == 1){
+            console.log(i +' '+ "odd")
+        }
+    }*/
+
+    //fizzBuzz asgn
+    /*for (let i = 0; i <=50; i++){
+        if (i%3 == 0 && i%5 ==0) {
+           console.log(i +' '+ "fizzBuzz") 
+        }else if(i%5 == 0){
+            console.log(i +' '+ "buzz")
+        }else if(i%3 ==0) {
+            console.log(i +' '+ "fizz")
+        }else{
+            console.log(i)
+        }
+    }*/
+
+    //Functions-28th March 2023
+
+    /*function addNumbers() {
+        let num1 = 20;
+        let num2 = 40;
+        let answer = (num1 + num2);
+        console.log(answer)
+    }
+    //addNumbers()
+
+    function addNumbers(num1, num2){
+        let answer = (num1 + num2);
+        console.log(answer);
+    }
+    //addNumbers(25, 25);
+
+    function addNumbers(num1, num2) {
+        let answer = (num1 + num2);
+        return answer;
+    }
+    let result = addNumbers(25, 25);
+    console.log(result);
+
+    let sum = function (num1, num2, num3){
+        let answer = (num1 + num2 - num3)
+        return answer;
+    }
+    console.log(sum (40,45,50));*/
+
+    //Arrays 3/29/2023
+    /*let myArray = [];
+        myArray[0] = 10;
+        myArray[1] = 20;
+        myArray[2] = 30;
+        myArray[3] = 50;
+        myArray[4] = 60;
+        myArray[5] = 80;
+        myArray[6] = 95;
+        myArray[7] = 70;
+        myArray[8] = 83;
+    console.log(myArray);*/
+
+    /*let myArray = [23, 34, 543, 34, 43, 23];
+    /*myArray.forEach(element => {
+        console.log(element);
+    });*/
+    /*for (let i = 0; i <=myArray.length; i++) {
+        console.log(myArray[i]);
+        
+    }*/
+
+    //Function Assignment 3/29/2023
+
+      /*function printAndSumNumbers() {
+    // Print the numbers 1 to 20
+        for (let i = 1; i <= 20; i++) {
+        console.log(i);
+        }
+
+    // Calculate the sum of the numbers 1 to 20
+        let sum = 0;
+        for (let i = 1; i <= 20; i++) {
+            sum += i;
+        }
+        
+        console.log("The sum of the numbers 1 to 20 is: " + sum);
+    }
+    printAndSumNumbers();*/
+
+    /*function calculateArea(radius) {
+        const pi = 3.141592653589793;
+        return pi * (radius**2);
+    
+    }
+    let radius = 10;
+    let area = calculateArea(radius);
+    //console.log(`The area of a circle with radius ${radius} is ${area}`);
+    console.log(area)*/
+
+    /*let capitalizeWords = (str) => {
+         return str.replace(/\b\w/g, (match) => match.toUpperCase());
+    };
+    let input = "i love coding since it makes work easier";
+    let output = capitalizeWords(input);
+    console.log(output);*/
+    
+    const str = "i love coding since it makes work easier";
+    function sliceElements() {
+        let slice = slice
+    }
+
+
+
+    
+
+
+
+    
+
+</script>
+
+</html>

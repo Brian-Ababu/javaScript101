@@ -1,0 +1,34 @@
+Exercise1
+Use prompt to check email match in JS (Done)
+
+Exercise2
+Use prompt enter password.
+Password should not be less than 10 characters.
+
+Exercise3
+Use prompt to ask user to enter total amount used for shopping.
+Calculate discount to be given based on total amount used for shopping.
+If shopping is 10000 and above user gets 15% of shopping amount.
+If shopping is 5000-9999 discount user gets is 10% of amount.
+If amount used is between 3000-4999 discount is 5% of amount.
+If amount is 2999 and below discount is 0%
+One Alert message (display discount given(AMT) and amount to pay after discount)
+
+LOOPS Assignment 1
+Use for loop to print out numbers from 1 to 20.
+Check if numbers are even or odd during the loop.
+      Assignment 2
+ Print numbers 1 to 50 if number is divisible by 3 print fizz 
+ if the number is divisible by 5 print buzz
+ if a number is divisible by both 3 and 5 print fizzbuzz
+
+
+ Assignment 3/29/2023
+ 1. Write a function that is going to print 1-20
+ and there after get the sum of the numbers between 1-20.
+
+ 2.  Write a function that returns the area of a circle when called
+ and radius passed as a parameter.
+
+ 3. Write an arrow function that accepts a string as a parameter
+ and converts the first letter of each word of the string to upper case.     

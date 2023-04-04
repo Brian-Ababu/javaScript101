@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transversing the DOM</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <input id="firstName" placeholder="enter your firstname"><br><br>
+    <button onclick="getName()">display firstname</button>
+    <div id="myDiv" style="flex: 4; width: 40%; background-color: aquamarine; height: 50%; float: none;">This is my div</div>
+</body>
+<script>
+    //id => document.getElementById("id")
+    //class => document.getElementsByClassName("class")
+    //tagName => document.getElementsByTagName("tag e.g <p>, <body>")
+    /*function getName() {
+        let name = document.getElementById("firstName").value;
+        alert("Your first name is: " + name);
+    }*/
+    var div = document.getElementsByTagName("div");
+    div.addEventListener("mouseover", function(){
+        div.class.backgroundColor = "black";    
+    });
+    /*function changeColor() {
+        var div = document.getElementById("myDiv");
+        div.style.backgroundColor = "black";
+    }*/
+
+    
+</script>
+</html>
