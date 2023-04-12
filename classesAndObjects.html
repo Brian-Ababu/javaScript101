@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes And Objects</title>
+</head>
+<body>
+    <h2>Let's Learn about Classes and Objects in JavaScript</h2>
+</body>
+<script>
+    //Object Declarations
+    /*var studentOne = {
+        email: "johndoe@gmail.com",
+        name: "John Doe",
+
+        login(){
+            console.log(this.name, 'has logged in');
+        },
+        logout(){
+            console.log(this.email, 'has logged out');
+        }
+    }
+    studentOne.login();
+    studentOne.logout();*/
+
+    //Classing it
+    class Student {
+        constructor(index, name, admissionNo, email){
+            this.index = index;
+            this.name = name;
+            this.admissionNo = admissionNo;
+            this.email = email;
+        }
+        login(){
+            console.log(this.name, 'has logged in with identifier', this.index, 
+            'personal info is', this.admissionNo, this.email);
+        }
+        logout(){
+            console.log(this.name, 'has logged out');
+        }
+    }
+    let student1 = new Student('001', 'Harrison Ford', 'IST1234', 'harrisonford23@gmail.com');
+    student1.login();
+    student1.logout();
+
+</script>
+</html>
