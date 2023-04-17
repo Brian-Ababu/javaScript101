@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class Student{
+        #firstName;
+        #lastName;
+        #score;
+        constructor(first, last, score){
+            this.#firstName = first;
+            this.#lastName = last;
+            this.#score = score;
+        }
+
+        set setFirstname(val){
+            this.#firstName = val;
+        }
+
+        set setLastname(val){
+            this.#lastName = val;
+        }
+
+        set setScore(val){
+            if (val < 1) {
+                console.log("score cannot be a negative number");
+            } else if (val > 100) {
+                console.log("score cannot be more 100");
+            } else{
+                this.#score = val;
+            }
+        }
+
+        get fullName(){
+            return `Your full name is ${this.#firstName} ${this.#lastName} and your score is ${this.#score}`;
+        }
+    }
+    let student1 = new Student ("Kim", "Hill", 60);
+    student1.setScore = 80;
+    console.log(student1.fullName)
+</script>
+</html>
