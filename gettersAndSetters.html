@@ -39,10 +39,19 @@
 
         get fullName(){
             return `Your full name is ${this.#firstName} ${this.#lastName} and your score is ${this.#score}`;
+        }    
+    }
+    // let student1 = new Student ("Kim", "Hill", 60);
+    // student1.setScore = 80;
+    // console.log(student1.fullName)
+
+    class partTimeStudent extends Student{
+        constructor(firstName, lastName){
+            super(firstName, lastName);
         }
     }
-    let student1 = new Student ("Kim", "Hill", 60);
-    student1.setScore = 80;
-    console.log(student1.fullName)
+    let student2 = new partTimeStudent('Ryzen', 'Queen');
+    student2.setScore = 50;
+    console.log(student2.fullName);
 </script>
 </html>
