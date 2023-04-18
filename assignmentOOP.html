@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP Implementation</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class Person{
+        #name;
+        #age;
+        #gender;
+        constructor(name, age, gender){
+            this.#name = name;
+            this.#age = age;
+            this.#gender = gender;
+        }
+
+        set userName(val){
+            this.#name = val;
+        }
+
+        set userAge(val){
+            if(val < 1){
+                console.log("Age cannot be less that 1 day")
+            } else if(val > 250){
+                console.log("Age cannot be more than 250 years")
+            } else {
+                this.#age = val;
+            }
+        }
+
+        set userGender(val){
+            this.#gender = val;
+        }
+
+        get userInfo(){
+            return `Name: ${this.#name}. Age: ${this.#age}. Gender: ${this.#gender}.`;
+        }    
+    }
+    class student extends Person{
+        #program;
+        #studyYear;
+        constructor(program, studyYear){
+            super(program, studyYear);
+        }
+        set studentProgram(val){
+            this.#program = val;
+        }
+        set studentYear(val){
+            this.#studyYear = val;
+        }
+        get studentData(){
+            return `Your program is ${this.#program} and you are in your ${this.#studyYear} of study`;
+        }
+        study(){
+            console.log('You study at the Institute of Software Technologies');
+        }
+        takeExam(){
+            console.log('You did the javaScript exam');
+        }    
+    }
+    class teacher extends Person{
+        #designation;
+        #salary;
+        constructor(designation, salary){
+            super(designation, salary);
+        }
+        set teacherDesgn(val){
+            this.#designation = val;
+        }
+        set teacherSalary(val){
+            this.#salary = val;
+        }
+        get teacherPayroll(){
+            return `You are a ${this.#designation} and your pay this month is ${this.#salary}`;
+        }
+        teach(){
+            console.log('You are a senior Software Engineering trainer at IST.');
+        }
+        setExam(){
+            console.log('You set the javaScript exam last month.');
+        }
+    }
+    class doctor extends Person{
+        #designation;
+        #salary;
+        constructor(designation, salary){
+            super(designation, salary);
+        }
+        set doctorDesgn(val){
+            this.#designation = val;
+        }
+        set doctorSalary(val){
+            this.#salary = val;
+        }
+        get doctorPayroll(){
+            return `You are a ${this.#designation}. Your pay this month is ${this.#salary}`;
+        }
+        checkUp(){
+            console.log('You did 200 check ups this month.');
+        }
+        prescribe(){
+            console.log('You prescribed more anti-malarials this month.');
+        }
+    }
+    //creating a new  student
+    let student1 = new student();
+    student1.studentProgram = "Diploma in Software development";
+    student1.studentYear = "2nd Year";
+    student1.userName = "Martin Bright";
+    student1.userAge = 24;
+    student1.userGender = "Male";
+    //logging the student info and data
+    console.log(student1.userInfo);
+    console.log(student1.studentData);
+    //calling the student methods
+    student1.study();
+    student1.takeExam();
+</script>
+</html>
