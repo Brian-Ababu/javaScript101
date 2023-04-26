@@ -32,3 +32,14 @@ Check if numbers are even or odd during the loop.
 
  3. Write an arrow function that accepts a string as a parameter
  and converts the first letter of each word of the string to upper case.     
+
+4/20/2023 Assignment
+Create a Bank and user has the ability to create a bank account with a name, acc number and balance
+Methods to implement are;
+Create acc
+Withdraw
+Deposit
+Check balance
+
+When they try to overdraft they should get a message 
+"you have insufficient balance"
