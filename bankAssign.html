@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABA Bank</title>
+</head>
+<body>
+    <h2>ABA BANK</h2>
+</body>
+<script>
+    class Bank{
+        #balance
+        constructor(accName, accNumber, balance){
+            this.accName = accName;
+            this.accNumber = accNumber;
+            this.#balance = balance;
+        }
+        set setAccountName(val){
+            this.accName = val;
+        }
+        set setAccountNumber(val){
+            this.accNumber = val;
+        }
+        set setAccBalance(val){
+            if (this.#balance < val) {
+                alert(`Your account balance is ${this.#balance}`);
+            } else if(this.#balance <= 0) {
+                alert("You have insuficient funds");
+            }else{
+                this.#balance = val;
+                alert(val);
+            }
+        }
+        get getAccountBalance(){
+            return this.#balance;
+        }
+        get getUserDetails(){
+        return `Account Name: ${this.accName} Account Number: ${this.accNumber} Account Balance: ${this.#balance}`;
+        }
+        updateBalance(){
+            var amount;
+            if (amount += this.#balance) {
+                console.log('Your account balance is:' +''+ this.getAccountBalance);
+            } else if(amount -= this.#balance){
+                console.log('Your account balance is:' +''+ this.getAccountBalance);
+            } else{
+                console.log('No available balance to display');
+            }
+        }
+    }
+    class client extends Bank{
+        createAcc(){
+            alert("You are creating an account with ABA Bank Limited. Please read the terms and condtions before proceeding.")
+            prompt("Please enter your full names");
+            prompt("Please enter your ID number");
+            prompt("Please enter intial deposit amount");
+            prompt("Please enter a valid phone number");
+            prompt("Please enter a secret pin");
+            prompt("Confirm secret pin");
+            alert("You have successfully created an account with ABA Bank we will send you your account information.");
+        }
+        deposit(){
+            prompt("Please enter tne amount you wish to deposit");
+        }
+        withdraw(){
+            prompt("Please enter the amount you wish to withdraw");
+            alert('Your account balance is ####');
+        }
+        checkBalance(){
+            alert('Your account balance is' + this.getAccountBalance);
+        }
+    }
+    let customer1 = new client('Jake Peralta', 2355342, 100000);
+    //customer1.createAcc();
+    customer1.updateBalance(200);
+    //customer1.accBalance = 5000;
+    //customer1.checkBalance();
+    //console.log(customer1.getUserDetails);
+</script>
+</html>
